@@ -1,0 +1,614 @@
+
+/* ------------------------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------- GENERAL ------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------*/
+
+/* ---------------- LINKS ------------------ */
+
+a {
+    text-decoration: none;  /* To prevent links from becoming blue*/
+    color: black
+}
+
+/* -------------- PARAGRAPHS --------------- */
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* ----------------- BODY ------------------ */
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    background-color: rgb(248 248 248);
+
+    margin: 0;
+    padding-top: 81px;
+    padding-right: 24px;
+    padding-bottom: 230px;
+    padding-left: 100px;
+
+    position: relative;
+}
+
+/* ------- EMPTY AREA AT THE BOTTOM ------- */
+
+.empty-area {
+    background-color: white;
+    height: 200px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------- HEADER -------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------*/
+
+.me {width: 32px; border-radius: 100%;}  /* Make profile picture round and smaller */
+
+/* --------------- HEADER ----------------- */
+
+.header {
+    background-color: white;
+    height: 56px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: rgb(220 220 220);
+
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* -------------- LEFT SECTION ----------------- */
+
+.header-left, .header-middle, .header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-left {width: 160px;}
+
+/* ------------- MIDDLE SECTION --------------- */
+
+.header-middle {
+    margin-left: 65px;
+    margin-right: 30px;
+    max-width: 470px;
+
+    flex: 1;
+}
+
+/* ------------- RIGHT SECTION --------------- */
+
+.header-right {
+    margin-right: 25px;
+    width: 181px;
+
+    flex-shrink: 0;  /* To prevent right section from shrinking */
+    justify-content: space-between;
+}
+
+/* ------------------------------------------------ HEADER ELEMENTS ------------------------------------------------ */
+
+/* ---------- NOTIFICATION NUMBER ----------- */
+
+.notification-number {
+    background-color: rgb(210 0 0);
+    color: white;
+
+    position: absolute;
+    top: 4px;
+    right: 1px;
+
+    font-size: 10px;
+    line-height: 9px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+.hamburger-btn {
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: white;
+}
+
+/* -------- ALL ELEMENTS -------- */
+
+.search-btn,
+.hamburger-btn,
+.voice-search,
+.notification-btn,
+.create,
+.apps {
+    position: relative;
+    display: flex;  /* To make tooltips centered */
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.15s;  /* Change the color slowly */
+}
+
+.search-btn:hover,
+.hamburger-btn:hover,
+.voice-search:hover,
+.notification-btn:hover,
+.create:hover,
+.apps:hover,
+.me:hover,
+.youtube-logo:hover {
+    cursor: pointer;
+}
+
+/* ------------ SEARCH BUTTON ------------- */
+
+.search-btn {
+    width: 65px;
+    height: 40px;
+
+    margin-right: 8px;
+    margin-left: 0;
+
+    border-style: solid;
+    border-color: rgb(200 200 200);
+    border-width: 1px;
+    border-radius: 0 25px 25px 0;
+}
+
+/* ------------ ALL OTHER BUTTONS ------------- */
+
+.voice-search,
+.hamburger-btn,
+.notification-btn,
+.create,
+.apps {
+    height: 40px;
+    width: 40px;
+    border-style: none;
+    border-radius: 100%;
+}
+
+/* -------- HOVER - ACTIVE ------ */
+
+.search-btn, .voice-search {
+    background-color: rgb(248 248 248);
+}
+
+.search-btn:hover,
+.hamburger-btn:hover,
+.voice-search:hover,
+.notification-btn:hover,
+.create:hover,
+.apps:hover {
+    background-color: rgb(240 240 240);
+}
+
+.search-btn:active,
+.hamburger-btn:active,
+.voice-search:active
+.notification-btn:active,
+.create:active,
+.apps:active {
+    background-color: rgb(232 232 232);
+}
+
+/* ------------- SEARCH INPUT --------------- */
+
+.search {
+    width: 0; /* Remove the minimum size so that it can be shrank as much as it's needed. */
+    height: 36px;
+    padding-left: 12px;
+
+    display: block;
+    flex: 1;
+
+    border-style: solid;
+    border-color: rgb(200 200 200);
+    border-width: 1px;
+    border-radius: 25px 0 0 25px;
+
+    font-size: 16px;
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.1);
+}
+
+.search:focus {
+    border-size: 1px 1px 1px 1px;
+    border-color: rgb(90 90 255);
+    outline: none;
+}
+
+/* -------- HEADER TOOLTIPS ------- */
+
+.tooltip {
+    background-color: rgb(96 96 96);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.15s;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    padding: 10px 7px;
+
+    border-radius: 2px;
+
+    position: absolute;
+    top: 50px;
+
+    pointer-events: none; /* The tool tip wont show up when you hover your mouse over it */
+    white-space: nowrap; /* To prevent words from wrapping */
+}
+
+.search-btn:hover .tooltip,
+.voice-search:hover .tooltip,
+.notification-btn:hover .tooltip,
+.create:hover .tooltip,
+.apps:hover .tooltip {
+    opacity: 0.85;
+}
+
+/* --------------------------------------------- MAKE HEADER RESPONSIVE -------------------------------------------- */
+
+@media (max-width: 610px) {
+    .search {
+        display: none;
+    }
+    .search-btn {
+        width: 40px;
+        border-radius: 0;
+        border-width: 0;
+    }
+    .header-middle {
+        margin-right: 5px;
+        margin-left: 40px;
+    }
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------- SIDEBAR ------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------*/
+
+/* --------- SIDEBAR LIST ------- */
+
+.sidebar-elements {
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------- SIDEBAR ---------- */
+
+.sidebar {
+    background-color: white;
+
+    width: 71px;
+
+    position: fixed;
+    top: 56px;
+    left: 0;
+    bottom: 0;
+
+    padding-top: 1px;
+
+    border-style: solid;
+    border-color: white;
+    border-width: 2px 0 0 0;
+    z-index: 3;
+}
+
+/* ------ SIDEBAR ELEMENTS ------- */
+
+.sidebar-logo a {
+    height: 75px;
+
+    margin-bottom: -1px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-logo {
+    transition: background-color 0.15s;
+}
+
+/* ----------- HOVER ------------ */
+
+.sidebar-logo:hover {
+    background-color: rgb(235 235 235);
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.sidebar-logo:active {
+    background-color: rgb(225 225 225);
+}
+
+/* ---------- IMAGES ------------ */
+
+.sidebar-logo img {
+    margin-bottom: 6px;
+    height: 24px;
+}
+
+/* -------- FONT SIZE ----------- */
+
+.sidebar-logo div {
+    font-size: 10px;
+}
+
+/* ----------------------------------------- MAKE SIDEBAR RESPONSIVE ------------------------------------------------*/
+
+@media (max-width: 800px) {  /* HIDE SIDEBAR IF THE WIDTH IS SMALLER THAN 800*/
+    .sidebar {
+        display: none;
+    }
+    body {
+        padding-left: 30px;  /* PUSH THE VIDEO GRID */
+    }
+}
+
+@media (min-width: 1330px) {  /* SHOW SIDEBAR WIDE AT 1330 WIDTH */
+
+    .sidebar {
+        width: 220px;
+    }
+
+    body {
+        padding-left: 250px;
+    }
+
+    .sidebar-logo a {
+        height: 50px;
+        flex-direction: row;
+        align-items: left;
+        justify-content: left;
+    }
+
+    .sidebar-logo img {
+        margin-top: 6px;
+        margin-left: 10px;
+        margin-right: 25px;
+        height: 26px;
+    }
+
+    .sidebar-logo div {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .sidebar-logo {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .home-btn {background-color: rgb(235 235 235); border-radius: 7px;}
+    .home-btn:hover {background-color: rgb(225 225 225);}
+    .home-btn:active {background-color: rgb(215 215 215);}
+}
+
+/* ------------------------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------- VIDEOS -------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------*/
+
+/* ----------------- PROFILE TOOLTIP ------------------ */
+
+.tooltip-profile {
+    position: relative;
+}
+
+.profile-pic-tooltip {
+    width: 60px;
+    border-radius: 100%;
+}
+
+.channel-name {
+    margin-bottom: 5px;
+
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.subscribers-tip {
+    color: rgb(96 96 96);
+    font-size: 14px;
+}
+
+.profile-tooltip {
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+
+    width: 250px;
+    height: 80px;
+
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    column-gap: 10px;
+    z-index: 1;
+
+    text-align: left;
+    align-items: center;
+
+    padding: 5px 13px;
+
+    border-radius: 10px;
+
+    position: absolute;
+    top: 30px;
+
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.tooltip-profile:hover .profile-tooltip {
+    opacity: 1;
+}
+
+/* -------------- VIDEO TIME ---------------- */
+
+.video-time {
+    background-color: black;
+    color: white;
+
+    position: absolute;
+    bottom: 12px;
+    right: 4px;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    padding: 4px 4px;
+
+    border-radius: 3px;
+}
+
+/* ------------ THUMBNAIL AND PROFILE PICTURE ------------- */
+
+.thumbnail {
+    width: 100%;
+}
+
+.profile {
+    width: 36px;
+    border-radius: 100%;
+}
+
+/* ------------------------- VIDEO GRID -------------------------- */
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    column-gap: 16px;
+    row-gap: 41px;
+}
+
+/* ---------------------- VIDEO CONTAINER ------------------------ */
+
+.top-container {
+    position: relative;
+}
+
+.bottom-container {
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+/* ------------------ VIDEO CONTAINER TEXTS ---------------------- */
+
+.video-title {
+    margin-bottom: 11px;
+    margin-left: -2px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.author,
+.stats {
+    color: rgb(96 96 96);
+
+    font-size: 12px;
+    line-height: 15px;
+
+    margin-left: -2px;
+    margin-top: -1px;
+}
+
+.author {margin-bottom: 4px;}
+
+/* ------------------------------------------- MAKE FONT SIZE RESPONSIVE ------------------------------------------- */
+
+@media (max-width: 510px) {
+    .video-title {
+        font-size: 16px;
+        line-height: 23px;
+    }
+}
+
+@media (min-width: 511px) and (max-width:680px) {
+    .video-title {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 681px) and (max-width: 760px) {
+    .video-title {
+        font-size: 15px;
+        line-height: 23px;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 1139px) {
+    .video-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 1140px) and (max-width: 1270px) {
+    .video-title {
+        font-size: 15px;
+        line-height: 23px;
+    }
+}
+
+@media (min-width: 1271px) {
+    .video-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/* ------------------------------------------- MAKE VIDEO GRID RESPONSIVE ------------------------------------------ */
+
+@media (max-width: 510px) {  /* From 0 to 510 show 1 video */
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+    .header-right {
+        margin-right: 0;
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 511px) and (max-width:890px) {  /* From 511 to 890 show 2 videos */
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 891px) and (max-width: 1139px) { /* From 891 to 1139 show 3 videos */
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1140px) { /* From 1140 to end show 4 videos */
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

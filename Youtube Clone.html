@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!---------------------------------------------------- HEAD ---------------------------------------------------------->
+<head>
+
+  <meta charset="UTF-8">
+  <!---------- This is for responsive features ---------->
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link rel="icon" href="./Images/youtube.ico?v=2">
+  <title>YouTube</title>
+  <!------------------- FONTS & CSS --------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<!---------------------------------------------------- BODY ---------------------------------------------------------->
+<body>
+
+<!--------------------------------------------------- HEADER --------------------------------------------------------->
+
+<div class="header">
+
+  <!---------------------------------- HEADER LEFT SECTION (LOGO) ----------------------------->
+
+  <div class="header-left">
+
+    <!---------- HAMBURGER MENU ------------>
+    <button class="hamburger-btn">
+      <img class="hamburger" style="height: 25px;" src="./Images/hamburger-menu.svg">
+    </button>
+
+    <!-- YouTube logo with a link of YouTue home page-->
+    <a href="https://www.youtube.com/" target="blank">
+      <img class="youtube-logo" style="height: 20px;" src="./Images/youtube-logo.svg">
+    </a>
+  </div>
+
+  <!-------------------- HEADER MIDDLE SECTION (SEARCH AREA AND MICROPHONE) ------------------>
+
+  <div class="header-middle">
+    <!-- Input area -->
+    <input class="search" type="text" placeholder="Search">
+
+    <!-- Search button -->
+    <button class="search-btn">
+      <img style="height: 24px;" src="./Images/search.svg">
+      <div class="tooltip">Search</div>
+    </button>
+
+    <!-- Voice search button -->
+    <button class="voice-search">
+      <img style="height: 24px;" src="./Images/voice-search-icon.svg">
+      <div class="tooltip">Search with your voice</div>
+    </button>
+  </div>
+
+  <!--------------------- HEADER RIGHT SECTION (NOTIFICATIONS AND PROFILE) ------------------->
+
+  <div class="header-right">
+
+    <!-- Create button -->
+    <div class="create">
+      <img style="height: 24px;" src="./Images/upload.svg">
+      <div class="tooltip">Create</div>
+    </div>
+
+    <!-- Apps menu -->
+    <div class="apps">
+      <img style="height: 24px;" src="./Images/youtube-apps.svg">
+      <div class="tooltip">YouTube apps</div>
+    </div>
+
+    <!-- Notifications -->
+    <div class="notifications" style="position: relative;">
+      <div class="notification-btn">
+        <img style="height: 24px;" src="./Images/notifications.svg">
+        <div class="tooltip">Notifications</div>
+      </div>
+      <!-- Number above notification -->
+      <div class="notification-number">3</div>
+    </div>
+
+    <!-- Profile picture -->
+    <img class="me" src="./Images/ugur.jpg">
+  </div>
+
+</div>
+
+<!-------------------------------------------------- SIDEBAR --------------------------------------------------------->
+
+<div class="sidebar">
+
+  <ul class="sidebar-elements">
+    <!------------ HOME BUTTON -------------->
+    <div class="sidebar-logo">
+      <div class="home-btn">
+        <a href="https://www.youtube.com/" target="blank">
+          <img src="./Images/home.svg">
+          <div>Home</div>
+        </a>
+      </div>
+    </div>
+
+    <!----------- EXPLORE BUTTON ------------>
+    <div class="sidebar-logo">
+      <a href="https://www.youtube.com/feed/explore" target="blank">
+        <img src="./Images/explore.svg">
+        <div>Explore</div>
+      </a>
+    </div>
+
+    <!-------- SUBSCRIPTIONS BUTTON --------->
+    <div class="sidebar-logo">
+      <a href="https://www.youtube.com/feed/subscriptions" target="blank">
+        <img src="./Images/subscriptions.svg">
+        <div>Subscriptions</div>
+      </a>
+    </div>
+
+    <!--------- ORIGINALS BUTTON ------------>
+    <div class="sidebar-logo">
+      <a href="https://www.youtube.com/shorts/KeRiH3G7PIA" target="blank">
+        <img src="./Images/originals.svg">
+        <div>Originals</div>
+      </a>
+    </div>
+
+    <!---------- YOUTUBE MUSIC ------------->
+    <div class="sidebar-logo">
+      <a href="https://music.youtube.com/" target="blank">
+        <img src="./Images/youtube-music.svg">
+        <div>YouTube Music</div>
+      </a>
+    </div>
+
+    <!---------- LIBRARY BUTTON ------------>
+    <div class="sidebar-logo">
+      <a href="https://www.youtube.com/feed/library" target="blank">
+        <img src="./Images/library.svg">
+        <div>Library</div>
+      </a>
+    </div>
+  </ul>
+
+</div>
+
+<!--------------------------------------------------- VIDEOS --------------------------------------------------------->
+
+<div class="video-grid">
+
+  <!---------------------------------------------------------------------------------------------------------------->
+  <div class="video-container">
+
+    <!--------- TOP CONTAINER ---------->
+    <div class="top-container">
+      <!--------- THUMBNAIL AND LINK ---------->
+      <a href="https://www.youtube.com/watch?v=N45X65Uh6Z8&ab_channel=EfeAydal">
+        <img class="thumbnail" src="./Images/1 (1).jpg">
+      </a>
+      <!------------ VIDEO LENGTH ------------->
+      <div class="video-time">28:15</div>
+    </div>
+
+    <!------- BOTTOM CONTAINER ---------->
+    <div class="bottom-container">
+
+      <!--------- PROFILE CONTAINER ---------->
+      <div class="profile-container">
+
+        <a class="tooltip-profile" href="https://www.youtube.com/@conmech">
+          <img class="profile" src="./Images/1 (2).jpg">
+
+          <!--------- PROFILE TOOLTIP ---------->
+          <div class="profile-tooltip">
+            <div><img class="profile-pic-tooltip" src="./Images/1 (2).jpg"></div>
+            <div>
+              <div class="channel-name">Efe Aydal</div>
+              <div class="subscribers-tip">594K subscribers</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!--------- TEXT CONTAINER ---------->
+      <div class="text-container">
+        <a href="https://www.youtube.com/watch?v=N45X65Uh6Z8&ab_channel=EfeAydal">
+          <p class="video-title">Understanding Atheists (English Subs)</p>
+        </a>
+        <a href="https://www.youtube.com/@conmech">
+          <p class="author">Efe Aydal</p>
+        </a>
+        <p class="stats">2.4M views · 7 years ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------------------>
+
+  <div class="video-container">
+
+    <!--------- TOP CONTAINER ---------->
+    <div class="top-container">
+      <!--------- THUMBNAIL AND LINK ---------->
+      <a href="https://www.youtube.com/watch?v=mFLQIVLp_-w&ab_channel=ERL%C4%B0K">
+        <img class="thumbnail" src="./Images/2 (1).jpg">
+      </a>
+      <!------------ VIDEO LENGTH ------------->
+      <div class="video-time">14:23</div>
+    </div>
+
+    <!------- BOTTOM CONTAINER ---------->
+    <div class="bottom-container">
+
+      <!--------- PROFILE CONTAINER ---------->
+      <div class="profile-container">
+
+        <a class="tooltip-profile" href="https://www.youtube.com/@ERLIK61">
+          <img class="profile" src="./Images/2 (2).jpg">
+
+          <!--------- PROFILE TOOLTIP ---------->
+          <div class="profile-tooltip">
+            <div><img class="profile-pic-tooltip" src="./Images/2 (2).jpg"></div>
+            <div>
+              <div class="channel-name">ERLİK</div>
+              <div class="subscribers-tip">363K subscribers</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!--------- TEXT CONTAINER ---------->
+      <div class="text-container">
+        <a href="https://www.youtube.com/watch?v=mFLQIVLp_-w&ab_channel=ERL%C4%B0K">
+          <p class="video-title">Kırmızı Çizgi</p>
+        </a>
+        <a href="https://www.youtube.com/@ERLIK61">
+          <p class="author">ERLİK</p>
+        </a>
+        <p class="stats">192K views · 1 year ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------------------>
+
+  <div class="video-container">
+
+    <!--------- TOP CONTAINER ---------->
+    <div class="top-container">
+      <!--------- THUMBNAIL AND LINK ---------->
+      <a href="https://www.youtube.com/watch?v=pS5peqApgUA&ab_channel=foolished">
+        <img class="thumbnail" src="./Images/3 (1).jpg">
+      </a>
+      <!------------ VIDEO LENGTH ------------->
+      <div class="video-time">3:09</div>
+    </div>
+
+    <!------- BOTTOM CONTAINER ---------->
+    <div class="bottom-container">
+
+      <!--------- PROFILE CONTAINER ---------->
+      <div class="profile-container">
+
+        <a class="tooltip-profile" href="https://www.youtube.com/@foolished">
+          <img class="profile" src="./Images/3 (2).jpg">
+
+          <!--------- PROFILE TOOLTIP ---------->
+          <div class="profile-tooltip">
+            <div><img class="profile-pic-tooltip" src="./Images/3 (2).jpg"></div>
+            <div>
+              <div class="channel-name">foolished</div>
+              <div class="subscribers-tip">4.67K subscribers</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!--------- TEXT CONTAINER ---------->
+      <div class="text-container">
+        <a href="https://www.youtube.com/watch?v=pS5peqApgUA&ab_channel=foolished">
+          <p class="video-title">Street Fighter - Justin vs Daigo</p>
+        </a>
+        <a href="https://www.youtube.com/@foolished">
+          <p class="author">foolished</p>
+        </a>
+        <p class="stats">12M views · 16 years ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------------------>
+
+  <div class="video-container">
+
+    <!--------- TOP CONTAINER ---------->
+    <div class="top-container">
+      <!--------- THUMBNAIL AND LINK ---------->
+      <a href="https://www.youtube.com/watch?v=x13t2EGKHEw&ab_channel=EvrimA%C4%9Fac%C4%B1">
+        <img class="thumbnail" src="./Images/4 (1).jpg">
+      </a>
+      <!------------ VIDEO LENGTH ------------->
+      <div class="video-time">2:18:09</div>
+    </div>
+
+    <!------- BOTTOM CONTAINER ---------->
+    <div class="bottom-container">
+
+      <!--------- PROFILE CONTAINER ---------->
+      <div class="profile-container">
+
+        <a class="tooltip-profile" href="https://www.youtube.com/@evrimagaci">
+          <img class="profile" src="./Images/4 (2).jpg">
+
+          <!--------- PROFILE TOOLTIP ---------->
+          <div class="profile-tooltip">
+            <div><img class="profile-pic-tooltip" src="./Images/4 (2).jpg"></div>
+            <div>
+              <div class="channel-name">Evrim Ağacı</div>
+              <div class="subscribers-tip">2.11M subscribers</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!--------- TEXT CONTAINER ---------->
+      <div class="text-container">
+        <a href="https://www.youtube.com/watch?v=x13t2EGKHEw&ab_channel=EvrimA%C4%9Fac%C4%B1">
+          <p class="video-title">Evrimi Neden Çürütemiyorlar? Çünkü Yalan Söylüyorlar!</p>
+        </a>
+        <a href="https://www.youtube.com/@evrimagaci">
+          <p class="author">Evrim Ağacı</p>
+        </a>
+        <p class="stats">3.1M views · 3 years ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------------------>
+
+  <div class="video-container">
+
+    <!--------- TOP CONTAINER ---------->
+    <div class="top-container">
+      <!--------- THUMBNAIL AND LINK ---------->
+      <a href="https://www.youtube.com/watch?v=TlrWKNGIXtQ&ab_channel=Por%C3%A7ay">
+        <img class="thumbnail" src="./Images/5 (1).jpg">
+      </a>
+      <!------------ VIDEO LENGTH ------------->
+      <div class="video-time">12:45</div>
+    </div>
+
+    <!------- BOTTOM CONTAINER ---------->
+    <div class="bottom-container">
+
+      <!--------- PROFILE CONTAINER ---------->
+      <div class="profile-container">
+
+        <a class="tooltip-profile" href="https://www.youtube.com/@Porcays">
+          <img class="profile" src="./Images/5 (2).jpg">
+
+          <!--------- PROFILE TOOLTIP ---------->
+          <div class="profile-tooltip">
+            <div><img class="profile-pic-tooltip" src="./Images/5 (2).jpg"></div>
+            <div>
+              <div class="channel-name">Porçay</div>
+              <div class="subscribers-tip">1.07M subscribers</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!--------- TEXT CONTAINER ---------->
+      <div class="text-container">
+        <a href="https://www.youtube.com/watch?v=TlrWKNGIXtQ&ab_channel=Por%C3%A7ay">
+          <p class="video-title">Sıkıyönetim istiyor musunuz</p>
+        </a>
+        <a href="https://www.youtube.com/@Porcays">
+          <p class="author">Porçay</p>
+        </a>
+        <p class="stats">497K views · 1 year ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------------------>
+
+  <div class="video-container">
+
+    <!--------- TOP CONTAINER ---------->
+    <div class="top-container">
+      <!--------- THUMBNAIL AND LINK ---------->
+      <a href="https://www.youtube.com/shorts/1QnxJP5fVdw">
+        <img class="thumbnail" src="./Images/6 (1).jpg">
+      </a>
+      <!------------ VIDEO LENGTH ------------->
+      <div class="video-time">0:49</div>
+    </div>
+
+    <!------- BOTTOM CONTAINER ---------->
+    <div class="bottom-container">
+
+      <!--------- PROFILE CONTAINER ---------->
+      <div class="profile-container">
+
+        <a class="tooltip-profile" href="https://www.youtube.com/@kinikemrecik/featured">
+          <img class="profile" src="./Images/6 (2).jpg">
+
+          <!--------- PROFILE TOOLTIP ---------->
+          <div class="profile-tooltip">
+            <div><img class="profile-pic-tooltip" src="./Images/6 (2).jpg"></div>
+            <div>
+              <div class="channel-name">kinik emrecik</div>
+              <div class="subscribers-tip">30.7K subscribers</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!--------- TEXT CONTAINER ---------->
+      <div class="text-container">
+        <a href="https://www.youtube.com/shorts/1QnxJP5fVdw">
+          <p class="video-title">Tc Simülasyonu</p>
+        </a>
+        <a href="https://www.youtube.com/@kinikemrecik/featured">
+          <p class="author">kinik emrecik</p>
+        </a>
+        <p class="stats">1M views · 1 year ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------------------>
+
+  <div class="video-container">
+
+    <!--------- TOP CONTAINER ---------->
+    <div class="top-container">
+      <!--------- THUMBNAIL AND LINK ---------->
+      <a href="https://www.youtube.com/watch?v=cUzklzVXJwo&ab_channel=Veritasium">
+        <img class="thumbnail" src="./Images/7 (1).jpg">
+      </a>
+      <!------------ VIDEO LENGTH ------------->
+      <div class="video-time">23:29</div>
+    </div>
+
+    <!------- BOTTOM CONTAINER ---------->
+    <div class="bottom-container">
+
+      <!--------- PROFILE CONTAINER ---------->
+      <div class="profile-container">
+
+        <a class="tooltip-profile" href="https://www.youtube.com/@veritasium">
+          <img class="profile" src="./Images/7 (2).jpg">
+
+          <!--------- PROFILE TOOLTIP ---------->
+          <div class="profile-tooltip">
+            <div><img class="profile-pic-tooltip" src="./Images/7 (2).jpg"></div>
+            <div>
+              <div class="channel-name">Veritasium</div>
+              <div class="subscribers-tip">13.1M subscribers</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!--------- TEXT CONTAINER ---------->
+      <div class="text-container">
+        <a href="https://www.youtube.com/watch?v=cUzklzVXJwo&ab_channel=Veritasium">
+          <p class="video-title">How Imaginary Numbers Were Invented</p>
+        </a>
+        <a href="https://www.youtube.com/@veritasium">
+          <p class="author">Veritasium</p>
+        </a>
+        <p class="stats">14M views · 1 year ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------------------>
+
+  <div class="video-container">
+
+    <!--------- TOP CONTAINER ---------->
+    <div class="top-container">
+      <!--------- THUMBNAIL AND LINK ---------->
+      <a href="https://www.youtube.com/watch?v=kYgD7AyD2Yw&ab_channel=Artur-TheLibraryofOhara">
+        <img class="thumbnail" src="./Images/8 (1).jpg">
+      </a>
+      <!------------ VIDEO LENGTH ------------->
+      <div class="video-time">32:46</div>
+    </div>
+
+    <!------- BOTTOM CONTAINER ---------->
+    <div class="bottom-container">
+
+      <!--------- PROFILE CONTAINER ---------->
+      <div class="profile-container">
+
+        <a class="tooltip-profile" href="Artur - The Library of Ohara">
+          <img class="profile" src="./Images/8 (2).jpg">
+
+          <!--------- PROFILE TOOLTIP ---------->
+          <div class="profile-tooltip">
+            <div><img class="profile-pic-tooltip" src="./Images/8 (2).jpg"></div>
+            <div>
+              <div class="channel-name">TheLibraryofOhara</div>
+              <div class="subscribers-tip">136K subscribers</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!--------- TEXT CONTAINER ---------->
+      <div class="text-container">
+        <a href="https://www.youtube.com/watch?v=kYgD7AyD2Yw&ab_channel=Artur-TheLibraryofOhara">
+          <p class="video-title">What is Luffy's TRUE DREAM? ODA ALREADY TOLD US! | One Piece Chapter MEGA-THEORY</p>
+        </a>
+        <a href="https://www.youtube.com/@TheLibraryofOhara/search">
+          <p class="author">TheLibraryofOhara</p>
+        </a>
+        <p class="stats">287K views · 1 year ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------------------>
+
+  <div class="video-container">
+
+    <!--------- TOP CONTAINER ---------->
+    <div class="top-container">
+      <!--------- THUMBNAIL AND LINK ---------->
+      <a href="https://www.youtube.com/watch?v=MuWCNb9TYqU&ab_channel=GothamChess">
+        <img class="thumbnail" src="./Images/9 (1).jpg">
+      </a>
+      <!------------ VIDEO LENGTH ------------->
+      <div class="video-time">18:37</div>
+    </div>
+
+    <!------- BOTTOM CONTAINER ---------->
+    <div class="bottom-container">
+
+      <!--------- PROFILE CONTAINER ---------->
+      <div class="profile-container">
+
+        <a class="tooltip-profile" href="https://www.youtube.com/@GothamChess">
+          <img class="profile" src="./Images/9 (2).jpg">
+
+          <!--------- PROFILE TOOLTIP ---------->
+          <div class="profile-tooltip">
+            <div><img class="profile-pic-tooltip" src="./Images/9 (2).jpg"></div>
+            <div>
+              <div class="channel-name">GothamChess</div>
+              <div class="subscribers-tip">1.76M subscribers</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!--------- TEXT CONTAINER ---------->
+      <div class="text-container">
+        <a href="https://www.youtube.com/watch?v=MuWCNb9TYqU&ab_channel=GothamChess">
+          <p class="video-title">PAINFUL 600 Elo Chess Match</p>
+        </a>
+        <a href="https://www.youtube.com/@GothamChess">
+          <p class="author">GothamChess</p>
+        </a>
+        <p class="stats">515K views · 3 months ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------------------>
+
+  <div class="video-container">
+
+    <!--------- TOP CONTAINER ---------->
+    <div class="top-container">
+      <!--------- THUMBNAIL AND LINK ---------->
+      <a href="https://www.youtube.com/watch?v=xz79isCVFtc&ab_channel=MargaretMorales">
+        <img class="thumbnail" src="./Images/10 (1).jpg">
+      </a>
+      <!------------ VIDEO LENGTH ------------->
+      <div class="video-time">16:08</div>
+    </div>
+
+    <!------- BOTTOM CONTAINER ---------->
+    <div class="bottom-container">
+
+      <!--------- PROFILE CONTAINER ---------->
+      <div class="profile-container">
+
+        <a class="tooltip-profile" href="https://www.youtube.com/@MargaretMoralesArt">
+          <img class="profile" src="./Images/10 (2).jpg">
+
+          <!--------- PROFILE TOOLTIP ---------->
+          <div class="profile-tooltip">
+            <div><img class="profile-pic-tooltip" src="./Images/10 (2).jpg"></div>
+            <div>
+              <div class="channel-name">Margaret Morales</div>
+              <div class="subscribers-tip">151K subscribers</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!--------- TEXT CONTAINER ---------->
+      <div class="text-container">
+        <a href="https://www.youtube.com/watch?v=xz79isCVFtc&ab_channel=MargaretMorales">
+          <p class="video-title">After The Rain | Watercolor Process</p>
+        </a>
+        <a href="https://www.youtube.com/@MargaretMoralesArt">
+          <p class="author">Margaret Morales</p>
+        </a>
+        <p class="stats">163K views · 3 years ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------------------>
+
+  <div class="video-container">
+
+    <!--------- TOP CONTAINER ---------->
+    <div class="top-container">
+      <!--------- THUMBNAIL AND LINK ---------->
+      <a href="https://www.youtube.com/watch?v=HwMyjKQ725E&ab_channel=DarkMatter2525">
+        <img class="thumbnail" src="./Images/11 (1).jpg">
+      </a>
+      <!------------ VIDEO LENGTH ------------->
+      <div class="video-time">6:49</div>
+    </div>
+
+    <!------- BOTTOM CONTAINER ---------->
+    <div class="bottom-container">
+
+      <!--------- PROFILE CONTAINER ---------->
+      <div class="profile-container">
+
+        <a class="tooltip-profile" href="https://www.youtube.com/@DarkMatter2525">
+          <img class="profile" src="./Images/11 (2).jpg">
+
+          <!--------- PROFILE TOOLTIP ---------->
+          <div class="profile-tooltip">
+            <div><img class="profile-pic-tooltip" src="./Images/11 (2).jpg"></div>
+            <div>
+              <div class="channel-name">DarkMatter2525</div>
+              <div class="subscribers-tip">761K subscribers</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!--------- TEXT CONTAINER ---------->
+      <div class="text-container">
+        <a href="https://www.youtube.com/watch?v=HwMyjKQ725E&ab_channel=DarkMatter2525">
+          <p class="video-title">Inappropriate For Children</p>
+        </a>
+        <a href="https://www.youtube.com/@DarkMatter2525">
+          <p class="author">DarkMatter2525</p>
+        </a>
+        <p class="stats">557K views · 11 years ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------------------>
+
+  <div class="video-container">
+
+    <!--------- TOP CONTAINER ---------->
+    <div class="top-container">
+      <!--------- THUMBNAIL AND LINK ---------->
+      <a href="https://www.youtube.com/watch?v=xaQJbozY_Is&ab_channel=Kurzgesagt%E2%80%93InaNutshell">
+        <img class="thumbnail" src="./Images/12 (1).jpg">
+      </a>
+      <!------------ VIDEO LENGTH ------------->
+      <div class="video-time">11:40</div>
+    </div>
+
+    <!------- BOTTOM CONTAINER ---------->
+    <div class="bottom-container">
+
+      <!--------- PROFILE CONTAINER ---------->
+      <div class="profile-container">
+
+        <a class="tooltip-profile" href="https://www.youtube.com/@kurzgesagt">
+          <img class="profile" src="./Images/12 (2).jpg">
+
+          <!--------- PROFILE TOOLTIP ---------->
+          <div class="profile-tooltip">
+            <div><img class="profile-pic-tooltip" src="./Images/12 (2).jpg"></div>
+            <div>
+              <div class="channel-name">Kurzgesagt – In a Nutshell</div>
+              <div class="subscribers-tip">19.7M subscribers</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!--------- TEXT CONTAINER ---------->
+      <div class="text-container">
+        <a href="https://www.youtube.com/watch?v=xaQJbozY_Is&ab_channel=Kurzgesagt%E2%80%93InaNutshell">
+          <p class="video-title">What Dinosaurs ACTUALLY Looked Like?</p>
+        </a>
+        <a href="https://www.youtube.com/@kurzgesagt">
+          <p class="author">Kurzgesagt – In a Nutshell</p>
+        </a>
+        <p class="stats">11M views · 1 year ago</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="empty-area"></div>
+
+</body>
+</html>
